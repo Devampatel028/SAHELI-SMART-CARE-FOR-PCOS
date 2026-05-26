@@ -1,8 +1,6 @@
-<div align="center">
+# 🌸 Saheli – Smart PCOS Care Platform
 
-<h1>🌸 Saheli – Smart PCOS Care Platform</h1>
-
-<p><strong>An AI-powered women's health platform for PCOS symptom analysis, personalized insights, and continuous health guidance.</strong></p>
+An AI-powered women's health platform for PCOS symptom analysis, personalized insights, and continuous healthcare guidance.
 
 ![License](https://img.shields.io/badge/license-Educational-pink?style=flat-square)
 ![Node](https://img.shields.io/badge/Node.js-18%2B-green?style=flat-square&logo=node.js)
@@ -10,124 +8,142 @@
 ![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-brightgreen?style=flat-square&logo=mongodb)
 ![Gemini](https://img.shields.io/badge/Google-Gemini%20AI-orange?style=flat-square&logo=google)
 
-</div>
+---
+
+# 📖 About
+
+Saheli is a full-stack AI-powered healthcare platform focused on helping women manage and understand PCOS through AI-driven insights and personalized healthcare recommendations.
+
+The platform provides:
+- AI-generated PCOS health reports
+- Smart symptom assessment
+- Personalized wellness guidance
+- AI chatbot support
+- Doctor consultation modules
+- OpenCV-based skin analysis
 
 ---
 
-## 📖 About
+# ✨ Features
 
-**Saheli** is a full-stack AI-powered PCOS health assistant platform designed to help women understand their symptoms, receive AI-generated health reports, and get personalized care recommendations. Users complete a comprehensive health assessment, which is analyzed by **Google Gemini AI** to generate a structured PCOS prediction report. The platform also features a context-aware chatbot, voice support, and a skin analysis service.
-
----
-
-## ✨ Features
-
-| Feature | Description |
-|---|---|
-| 🔐 **User Authentication** | Secure login & registration with JWT |
-| 📋 **Health Assessment Form** | Comprehensive PCOS symptom questionnaire |
-| 🤖 **AI PCOS Prediction** | Gemini AI analyzes data & generates a health report |
-| 💬 **AI Chatbot** | Context-aware floating assistant for health guidance |
-| 🎙️ **Voice Commands** | Voice input support for the chatbot |
-| 🩺 **Doctor Consultation** | Image upload for doctor review |
-| 🖼️ **Skin Analysis** | OpenCV-based skin condition analysis |
-| 🛡️ **Admin Dashboard** | Manage users, doctors, and platform insights |
-| 📊 **Personalized Dashboard** | Tailored diet, exercise & skincare recommendations |
+- 🔐 Secure JWT Authentication
+- 📋 AI-based PCOS Assessment System
+- 🤖 Google Gemini AI Integration
+- 💬 Smart Healthcare Chatbot
+- 🎙️ Voice Command Support
+- 🩺 Doctor Consultation Dashboard
+- 🖼️ OpenCV Skin Analysis Service
+- 📊 Personalized Patient Dashboard
+- 🛡️ Admin Management Panel
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-### Frontend
-- **React.js** – Component-based UI
-- **Tailwind CSS** – Utility-first styling
-- **React Router** – Client-side navigation
-- **Vite** – Fast development build tool
+## Frontend
+- React.js
+- Tailwind CSS
+- React Router
+- Vite
 
-### Backend
-- **Node.js** + **Express.js** – RESTful API server
-- **MongoDB** + **Mongoose** – Database & ODM
-- **JWT** – Secure authentication
-- **Multer** – File/image upload handling
-- **Nodemailer** – Email notifications
+## Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+- Multer
+- Nodemailer
 
-### AI & Services
-- **Google Gemini API** – PCOS prediction & chatbot AI
-- **OpenCV (Python)** – Skin analysis microservice
-
----
-
-## 🗂️ Project Structure
-
-```
-Saheli-Smart PCOS Care/
-├── frontend/               # React.js frontend (Vite)
-│   └── src/
-│       ├── pages/          # All page components
-│       ├── components/     # Reusable UI components
-│       └── assets/         # Static assets
-│
-├── backend/                # Node.js/Express backend
-│   ├── models/             # Mongoose data models
-│   ├── routes/             # API route handlers
-│   ├── services/           # Business logic & AI integration
-│   └── middleware/         # Auth & error middleware
-│
-└── opencv_service/         # Python OpenCV skin analysis service
-    ├── app.py
-    └── requirements.txt
-```
+## AI & Services
+- Google Gemini API
+- OpenCV (Python)
 
 ---
 
-## 🚀 Getting Started
+# 📸 Project Preview
 
-### Prerequisites
-- Node.js v18+
-- Python 3.8+ (for OpenCV service)
-- MongoDB Atlas account
-- Google Gemini API key
+## 🌐 Landing Page
+<img width="100%" src="./Pre-view-imgs/landing-page.png" />
 
 ---
 
-### 1️⃣ Clone the Repository
+## 👩 Patient Dashboard
+<img width="100%" src="./Pre-view-imgs/patient-page.png" />
+
+---
+
+## 👨‍⚕️ Doctor Dashboard
+<img width="100%" src="./Pre-view-imgs/doctor-page.png" />
+
+---
+
+## 📋 Assessment Module
+<img width="100%" src="./Pre-view-imgs/assessment-preview.png" />
+
+---
+
+# 🎥 Demo Videos
+
+## 👩 Patient Dashboard Demo
+[▶ Watch Patient Demo](./Pre-view-imgs/patient-demo.mp4)
+
+---
+
+## 👨‍⚕️ Doctor Dashboard Demo
+[▶ Watch Doctor Demo](./Pre-view-imgs/doctor-demo.mp4)
+
+---
+
+## 📋 Assessment Module Demo
+[▶ Watch Assessment Demo](./Pre-view-imgs/assessment-demo.mp4)
+
+---
+
+# 🗂️ Project Structure
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-cd YOUR_REPOSITORY_NAME
+Saheli-Smart-PCOS-Care/
+│
+├── frontend/
+├── backend/
+├── opencv_service/
+└── Pre-view-imgs/
 ```
 
 ---
 
-### 2️⃣ Backend Setup
+# 🚀 Getting Started
+
+## Clone Repository
+
+```bash
+git clone https://github.com/Devampatel028/Saheli-Smart-PCOS-Care.git
+cd Saheli-Smart-PCOS-Care
+```
+
+---
+
+# Backend Setup
 
 ```bash
 cd backend
 npm install
+npm run dev
 ```
 
-Create a `.env` file in the `backend/` folder:
+Create `.env`
 
 ```env
 PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret_key
-GEMINI_API_KEY=your_google_gemini_api_key
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret
+GEMINI_API_KEY=your_api_key
 ```
-
-Start the backend server:
-
-```bash
-npm run dev        # Development (with nodemon)
-# or
-npm start          # Production
-```
-
-The backend runs on **http://localhost:5000**
 
 ---
 
-### 3️⃣ Frontend Setup
+# Frontend Setup
 
 ```bash
 cd frontend
@@ -135,11 +151,9 @@ npm install
 npm run dev
 ```
 
-The frontend runs on **http://localhost:5173**
-
 ---
 
-### 4️⃣ OpenCV Skin Analysis Service (Optional)
+# OpenCV Service
 
 ```bash
 cd opencv_service
@@ -147,61 +161,50 @@ pip install -r requirements.txt
 python app.py
 ```
 
-> On Windows, you can also run `run_opencv.bat` from the project root.
-
-The service runs on **http://localhost:8000**
-
 ---
 
-## 🔄 Data Flow
+# 🔄 Application Workflow
 
-```
-User Registers / Logs In
+```bash
+User Authentication
         ↓
-Reads PCOS Awareness Info
+PCOS Health Assessment
         ↓
-Completes Health Assessment Form
+Backend API Processing
         ↓
-Data sent to Backend API
+Gemini AI Analysis
         ↓
-Backend consults Google Gemini AI
+AI-generated Health Report
         ↓
-AI generates structured PCOS report
+Dashboard Recommendations
         ↓
-Report stored in MongoDB
-        ↓
-User views personalized Dashboard & Care Modules
-        ↓
-Floating Chatbot provides ongoing support
+Continuous AI Chatbot Support
 ```
 
 ---
 
-## 🔮 Future Improvements
+# 🔮 Future Improvements
 
-- [ ] Real medical dataset integration for improved AI accuracy
-- [ ] Custom AI model training for PCOS prediction
-- [ ] Mobile app (React Native / Flutter)
-- [ ] Doctor appointment booking system
-- [ ] Wearable device data integration
-- [ ] Multi-language support
-
----
-
-## 👤 Author
-
-**Devam Patel**
+- Mobile Application
+- Multi-language Support
+- Doctor Appointment Booking
+- Wearable Device Integration
+- Advanced AI Prediction Models
 
 ---
 
-## 📄 License
+# 👨‍💻 Author
 
-This project is built for **educational and research purposes**.
-It is not a substitute for professional medical advice.
-Always consult a qualified healthcare provider for medical decisions.
+### Devam Patel
+
+GitHub:
+https://github.com/Devampatel028
 
 ---
 
-<div align="center">
-  Made with 🌸 for women's health by <strong>Devam Patel</strong>
-</div>
+# 📄 License
+
+This project is developed for educational and research purposes only.
+
+It is not intended to replace professional medical advice.
+Always consult healthcare professionals for medical decisions.
